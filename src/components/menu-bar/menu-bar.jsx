@@ -565,35 +565,36 @@ class MenuBar extends React.Component {
                     {this.props.sessionExists ? (
                         this.props.username ? (
                             // ************ user is logged in ************
-                            <React.Fragment>
-                                <a href="/mystuff/">
-                                    <div
-                                        className={classNames(
-                                            styles.menuBarItem,
-                                            styles.hoverable,
-                                            styles.mystuffButton
-                                        )}
-                                    >
-                                        <img
-                                            className={styles.mystuffIcon}
-                                            src={mystuffIcon}
-                                        />
-                                    </div>
-                                </a>
-                                <AccountNav
-                                    className={classNames(
-                                        styles.menuBarItem,
-                                        styles.hoverable,
-                                        {[styles.active]: this.props.accountMenuOpen}
-                                    )}
-                                    isOpen={this.props.accountMenuOpen}
-                                    isRtl={this.props.isRtl}
-                                    menuBarMenuClassName={classNames(styles.menuBarMenu)}
-                                    onClick={this.props.onClickAccount}
-                                    onClose={this.props.onRequestCloseAccount}
-                                    onLogOut={this.props.onLogOut}
-                                />
-                            </React.Fragment>
+                            // <React.Fragment>
+                            //     <a href="/mystuff/">
+                            //         <div
+                            //             className={classNames(
+                            //                 styles.menuBarItem,
+                            //                 styles.hoverable,
+                            //                 styles.mystuffButton
+                            //             )}
+                            //         >
+                            //             <img
+                            //                 className={styles.mystuffIcon}
+                            //                 src={mystuffIcon}
+                            //             />
+                            //         </div>
+                            //     </a>
+                            //     <AccountNav
+                            //         className={classNames(
+                            //             styles.menuBarItem,
+                            //             styles.hoverable,
+                            //             {[styles.active]: this.props.accountMenuOpen}
+                            //         )}
+                            //         isOpen={this.props.accountMenuOpen}
+                            //         isRtl={this.props.isRtl}
+                            //         menuBarMenuClassName={classNames(styles.menuBarMenu)}
+                            //         onClick={this.props.onClickAccount}
+                            //         onClose={this.props.onRequestCloseAccount}
+                            //         onLogOut={this.props.onLogOut}
+                            //     />
+                            // </React.Fragment>
+                            null
                         ) : (
                             // ********* user not logged in, but a session exists
                             // ********* so they can choose to log in
