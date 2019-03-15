@@ -65,7 +65,7 @@ import remixIcon from './icon--remix.svg';
 import dropdownCaret from './dropdown-caret.svg';
 import languageIcon from '../language-selector/language-icon.svg';
 
-import scratchLogo from './scratch-logo.svg';
+import scratchLogo from './logo_sm.png';
 
 import sharedMessages from '../../lib/shared-messages';
 
@@ -466,7 +466,7 @@ class MenuBar extends React.Component {
                             </MenuBarMenu>
                         </div>
                     </div>
-                    <Divider className={classNames(styles.divider)} />
+                    {/* <Divider className={classNames(styles.divider)} />
                     <div
                         aria-label={this.props.intl.formatMessage(ariaMessages.tutorials)}
                         className={classNames(styles.menuBarItem, styles.hoverable)}
@@ -477,7 +477,7 @@ class MenuBar extends React.Component {
                             src={helpIcon}
                         />
                         <FormattedMessage {...ariaMessages.tutorials} />
-                    </div>
+                    </div> */}
                     <Divider className={classNames(styles.divider)} />
                     {this.props.canEditTitle ? (
                         <div className={classNames(styles.menuBarItem, styles.growable)}>
@@ -598,7 +598,7 @@ class MenuBar extends React.Component {
                             // ********* user not logged in, but a session exists
                             // ********* so they can choose to log in
                             <React.Fragment>
-                                <div
+                                {/* <div
                                     className={classNames(
                                         styles.menuBarItem,
                                         styles.hoverable
@@ -611,7 +611,7 @@ class MenuBar extends React.Component {
                                         description="Link for creating a Scratch account"
                                         id="gui.menuBar.joinScratch"
                                     />
-                                </div>
+                                </div> */}
                                 <div
                                     className={classNames(
                                         styles.menuBarItem,

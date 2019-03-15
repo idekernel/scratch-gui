@@ -3,9 +3,7 @@ import {addLocaleData} from 'react-intl';
 import {localeData} from 'scratch-l10n';
 import editorMessages from 'scratch-l10n/locales/editor-msgs';
 import {isRtl} from 'scratch-l10n';
-
-addLocaleData(localeData);
-
+addLocaleData(localeData.filter(item => item.locale === 'zh-cn' || item.locale === 'en' || item.locale === 'zh'));
 const UPDATE_LOCALES = 'scratch-gui/locales/UPDATE_LOCALES';
 const SELECT_LOCALE = 'scratch-gui/locales/SELECT_LOCALE';
 

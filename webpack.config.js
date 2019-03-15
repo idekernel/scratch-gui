@@ -12,6 +12,10 @@ var autoprefixer = require('autoprefixer');
 var postcssVars = require('postcss-simple-vars');
 var postcssImport = require('postcss-import');
 
+if (process.env.NODE_ENV) {
+    process.env.NODE_ENV = process.env.NODE_ENV.trim();
+}
+
 const base = {
     mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
     devtool: 'cheap-module-source-map',
